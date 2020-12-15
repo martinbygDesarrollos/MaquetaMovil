@@ -9,6 +9,7 @@ import { iconItemMenuColor } from '../Styles/colorsStyle';
 import homeScreen from '../Screen/homeScreen';
 import secondScreen from '../Screen/secondScreen';
 import singInScreen from '../Screen/singInScreen';
+import cameraScreen from '../Screen/cameraScreen';
 
 import styles from '../Styles/drawerStyles';
 
@@ -41,6 +42,7 @@ function Menu(props) {
             <DrawerMenu iconName='home' titleName='Inicio' navigation={() => props.navigation.navigate('Home')} />
             <DrawerMenu iconName='list-alt' titleName='Segunda' navigation={() => props.navigation.navigate('Second')} />
             <DrawerMenu iconName='sign-in' titleName='SignInScreen' navigation={()=> props.navigation.navigate('SignInScreen')} />
+            <DrawerMenu iconName='camera' titleName='Camera' navigation={()=> props.navigation.navigate('CameraScreen')} />
         </View>
     );
 }
@@ -54,6 +56,7 @@ function MyDrawer() {
             <Drawer.Screen name="Home" component={homeScreen} />
             <Drawer.Screen name="Second" component={secondScreen} />
             <Drawer.Screen name="SignInScreen" component={singInScreen} />
+            <Drawer.Screen name="CameraScreen" component={cameraScreen} />
         </Drawer.Navigator>
     </NavigationContainer>);
 }
