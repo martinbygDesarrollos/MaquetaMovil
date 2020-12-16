@@ -1,19 +1,21 @@
 import * as React from 'react';
-import {View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
-export default function singInScreen(){
-    return(
+import SingInModalScreen from './signInModalScreen';
+
+export default function singInScreen() {
+    return (
         <View style={styles.container}>
-            <Text>Inicio sesion</Text>
+            <SingInModalScreen />
         </View>
     );
 }
 
 const styles = StyleSheet.create({
     container: {
-      flex: 1,
-      backgroundColor: '#fff',
-      alignItems: 'center',
-      justifyContent: 'center',
+        flex: 1,
+        backgroundColor: '#fff',
+        alignItems: 'center',
+        justifyContent: 'center',
     },
-  });
+});

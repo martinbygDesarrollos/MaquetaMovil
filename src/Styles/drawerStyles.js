@@ -4,7 +4,7 @@ import {
     userContainerBackgroundColor,
     userContainerBorderColor,
     userNameColor
-} from './colorsStyle';
+} from './configsStyle';
 
 let width = Dimensions.get('window').width;
 let height = Dimensions.get('window').height;

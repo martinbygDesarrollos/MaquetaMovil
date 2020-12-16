@@ -4,7 +4,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
 import { navigationRef } from './rootNavigation';
 import { FontAwesome } from '@expo/vector-icons';
-import { iconItemMenuColor } from '../Styles/colorsStyle';
+import { iconItemMenuColor } from '../Styles/configsStyle';
 
 import homeScreen from '../Screen/homeScreen';
 import secondScreen from '../Screen/secondScreen';
